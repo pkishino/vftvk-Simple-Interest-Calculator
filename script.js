@@ -31,7 +31,6 @@ function validatePrincipal(){
     if (principal == "" || principal.value <= 0) {
         alert("Enter a positive number");
         principal.focus();
-        principal.value="";
         return false;
       }
     return true;
