@@ -9,11 +9,15 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
-            <label for="principal">Amount</label> <input type="number"  id="principal" required onchange="validatePrincipal()">  <br/>
-            <label for="rate">Rate</label> <input type="range" id="rate" min="1" max="20" step=".25" value="10.25" onchange="updateRate()">
+            <label>Amount
+                <input type="number"  id="principal" oninput="validatePrincipal()">
+            </label>  <br/>
+            <label>Interest rate
+                <input type="range" id="rate" min="1" max="20" step=".25" value="10.25" oninput="updateRate()">
             <span id="rate_val">
                 10.25%
-            </span>  <br/>
+            </span>
+            </label>  <br/>
             <label>No. of Years</label> <select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -31,10 +35,7 @@
             <span id="result">
             </span>
             <footer>
-
                 &#169; Everyone Can Get Rich
-        
-        
             </footer>
         </div>
         
