@@ -1,5 +1,6 @@
 //Function to compute the interest
 function compute() {
+    if (validatePrinciple()){
     //fetch set values
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
@@ -16,10 +17,11 @@ function compute() {
      principal + "</mark>,\<br\>at an interest rate of <mark>" + rate + 
      "%\</mark>.<br\>You will receive an amount of <mark>" + interest + 
      "</mark>,\<br\>in the year <mark>" + year + "\</mark><br\>"
+    }
 }
 //function to dynamically show the slider value 
 function updateRate() {
-    document.getElementById("rate_val").innerText = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText = document.getElementById("rate").value+"%";
 }
 
 //Function checks that principal field is neither empty nor a non-positive number
@@ -30,5 +32,7 @@ function validatePrincipal(){
         alert("Enter a positive number");
         principal.focus();
         principal.value="";
+        return false;
       }
+    return true;
 }
