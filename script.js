@@ -1,6 +1,6 @@
 //Function to compute the interest
 function compute() {
-    if (validatePrinciple()){
+    if (validatePrincipal()){
     //fetch set values
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
