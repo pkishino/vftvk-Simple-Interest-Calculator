@@ -1,29 +1,39 @@
 body {
     background-color:black;
     font-family:arial;
-    color:white
 }
 h1{
     color:grey;
-    font-family:verdana
+    font-family:verdana;
+    text-align:left;
+    margin-left:5%;
+    margin-bottom: 50px;
 }
-.maindiv {
+#maindiv {
     background-color:white;
-    font-family:arial;
-    color:black;
-    width: 500px;
-    padding: 20px;
+    padding: 20px 0px;
     border-radius: 25px;
-    text-align: center;
+	margin: 10% 30%;
 }
-label{
-    margin-top:10px;
-    margin-bottom:5px;
-	  margin-left:25%;
+#tags{
+	margin-left:25%;
 }
 footer{
-    margin-left:10%;
-	  margin-top: 5%;
+    text-align: left;
+    margin-left:5%;
+    margin-top: 20px;
+}
+#principal{
+    margin-left: 15%;
+}
+#rate{
+    margin-left: 8%;
+}
+#years{
+    margin-left: 8%;
+}
+#compute{
+    margin-bottom: 20px;
 }
 
 
